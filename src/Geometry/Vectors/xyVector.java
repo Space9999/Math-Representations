@@ -1,7 +1,8 @@
 public class xyVector extends dVector {
 	private double x; // Component Form
-	private double y; // Component Form
-	// x and y must be negative if they are representing left or down respectively
+	private double y; 
+	
+	// x and y must be negative if they are representing negative directions on a cartesian plane
 	public xyVector(double x, double y) {
 		super((float)Math.sqrt(x * x + y * y), Math.toDegrees(Math.atan2(y, x)));
 		this.x = x; this.y = y;
@@ -55,6 +56,6 @@ public class xyVector extends dVector {
 	}
 	
 	public double angleBetween(xyVector other) {
-		return dotProduct(other) / (super.getDist() * other.getDist());
+		return Math.toDegrees(Math.acos(dotProduct(other) / (super.getDist() * other.getDist())));
 	}
 }
