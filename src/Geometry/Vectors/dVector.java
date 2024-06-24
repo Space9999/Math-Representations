@@ -1,6 +1,6 @@
 public class dVector {
 	private float dist;
-	private double dir; 
+	private double dir; // 0-360 degrees with positive being counterclockwise and negative being clockwise
 	
 	public dVector(float dist, double dir) {
 		this.dist = dist;
