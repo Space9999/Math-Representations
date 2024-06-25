@@ -7,4 +7,4 @@ Vectors:
   - XYZ Vector: A representation of a 3d vector
 
 Polygons:
-  - regularPolygons: A representation of any regular polygon
+  - regularPolygon: A representation of any regular polygon
