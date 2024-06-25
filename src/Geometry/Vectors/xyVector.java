@@ -39,6 +39,14 @@ public class xyVector extends dVector {
 		super.setDir(Math.toDegrees(Math.atan2(y, x)));
 	}
 	
+	public float getDist() {
+		return super.getDist();
+	}
+
+	public double getDir() {
+		return super.getDir();
+	}
+
 	public xyVector vectorAdd(xyVector other) {
 		return new xyVector(x + other.getX(), y + other.getY());
 	}
