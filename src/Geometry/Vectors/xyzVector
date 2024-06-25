@@ -45,6 +45,10 @@ public class xyzVector extends dVector {
 		this.z = z;
 		super.setDist((float)Math.sqrt(x * x + y * y + z * z));
 	}
+
+	public float getDist() {
+		return super.getDist();
+	}
 	
 	public xyzVector vectorAdd(xyzVector other) {
 		return new xyzVector(x + other.getX(), y + other.getY(), z + other.getZ());
