@@ -1,6 +1,6 @@
 package Geometry.Polygons;
 
-public class regularPolygon {
+public class RegularPolygon {
     
     private int sides;
     private double sideLength;
