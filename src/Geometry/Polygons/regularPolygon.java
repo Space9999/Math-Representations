@@ -1,6 +1,6 @@
 package Geometry.Polygons;
 
-public class Polygon {
+public class regularPolygon {
     
     private int sides;
     private double sideLength;
@@ -40,5 +40,12 @@ public class Polygon {
         return sideLength * sides;
     }
 
+    public double getApothem() {
+        return sideLength / (2 * Math.toDegrees(Math.tan(180 / sides)));
+    }
+    
+    public double getArea() {
+        return 0.5 * getApothem() * getPerimeter();
+    }
 
 }
